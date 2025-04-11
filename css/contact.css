@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    background: url("../image/contact.jpg");
+    background-size: cover;
+}
+
+/* Page Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgb(27, 26, 26);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-in-out;
+    margin-top: 200px;
+}
+
+/* Slide-up Animation for Container */
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Contact Info */
+.contact-info p {
+    font-size: 16px;
+    color: #f4ebeb;
+    margin: 5px 0;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+/* Back Button */
+.back-button {
+    margin-top: 20px;
+}
+
+/* Back Button Styling */
+.back-button button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Back Button */
+.back-button button:hover {
+    transform: scale(1.1);
+    animation: bounce 0.3s ease-in-out;
+}
+
+/* Left Arrow for Button */
+.back-button button::before {
+    content: "◀ ";
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
