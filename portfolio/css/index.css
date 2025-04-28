@@ -1,0 +1,95 @@
+body {
+    background-image: url('../image/about.jpg');  /* Corrected path */
+    background-size: cover; /* Ensures full coverage */
+    background-position: center center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
+}
+
+header {
+    background: rgba(17, 17, 17, 0.8);
+    color: rgb(244, 241, 241);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* About Section Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 150px auto 0;
+    padding: 20px;
+    background: rgba(27, 26, 26, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+/* About Content */
+.about-content {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* About Image */
+.about-image img {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10%; /* Makes the image circular */
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+/* SwipeMore Button */
+.swipemore-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 80px;
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.swipemore-btn::after {
+    content: '\2192'; /* Unicode arrow */
+    position: absolute;
+    opacity: 0;
+    bottom: -20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.swipemore-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    padding-bottom: 30px;
+}
+
+.swipemore-btn:hover::after {
+    opacity: 1;
+    bottom: 10px;
+}

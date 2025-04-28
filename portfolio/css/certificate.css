@@ -1,0 +1,70 @@
+body {
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    text-align: center;
+    color: rgb(7, 7, 7);
+}
+body {
+    background-image: url('../image/certificate.jpg');  /* Corrected path */
+    background-size: cover; /* Ensures full coverage */
+    background-position: center center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
+}
+.container {
+    width: 40%;
+    margin: 50px auto;
+    padding: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 18px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background: #ff7e5f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s;
+}
+.btn:hover {
+    background: #fc5c7d;
+    transform: scale(1.05);
+}
+.back-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.back-button button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #291611;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: "pacifico",cursive;
+    margin-top: 100px;
+}
+
+.back-button button:hover {
+    background-color: #fbae88;
+}

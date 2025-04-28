@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: "calibri" sans-serif;
+    margin-top: 50px;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    background: url("../image/hobbies.jpg");
+    background-size: cover;
+    font-size: 20px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container for Hobby Boxes */
+.container {
+    max-width:1000px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Hobby Box Styles */
+.hobby-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top:100px;
+}
+
+/* Hover Effect on Hobby Boxes */
+.hobby-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hobby Box Images */
+.hobby-box img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Titles and Text */
+h1 {
+    color: #333;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+}
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Back Button */
+.back-button {
+    margin-top: 30px;
+}
+
+/* Back Button Styling */
+.back-button button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect on Back Button */
+.back-button button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Left Arrow for Button */
+.back-button button::before {
+    content: "◀ ";
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hobby-box {
+        width: 80%;
+    }
+}

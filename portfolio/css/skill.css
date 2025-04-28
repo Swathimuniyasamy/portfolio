@@ -1,0 +1,131 @@
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+body {
+    background-image: url('../image/skill.jpg');  /* Corrected path */
+    background-size: cover; /* Ensures full coverage */
+    background-position: center center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
+}
+
+.back-button button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #291611;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: "pacifico",cursive;
+}
+
+.back-button button:hover {
+    background-color: #fbae88;
+}
+body {
+    font-family: 'calibiri', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    text-align: center;
+    color: rgb(255, 252, 252);
+    background-image: url("../image/skill.jpg");
+    background-size: cover;
+}
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding:5px;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Skill Sections */
+.skills-section {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-category {
+    width: 30%;
+    padding: 20px;
+    background: rgba(241, 35, 35, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.skills-category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skills-category h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills-category h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: rgb(22, 0, 0);
+    margin: 8px auto;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(246, 227, 227, 0.2);
+    transition: all 0.3s ease;
+}
+li:last-child {
+    border-bottom: none;
+}
+
+/* Fade-in Animation */
+.skills-category {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-category {
+        width: 90%;
+    }
+}
