@@ -1,4 +1,4 @@
-# 🌐 Swathi Dharsan — Portfolio Website
+# 🌐 Swathi M — Portfolio Website
 
 Welcome to my personal portfolio website! This site is a digital reflection of my journey, skills, and passion as a **Full Stack Developer**. Built with a modern tech stack and clean design principles, it showcases my resume, technical skills, projects, hobbies, and contact information.
 
