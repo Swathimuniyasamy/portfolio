@@ -54,7 +54,7 @@ Outside of coding, I enjoy:
 
 Want to connect or collaborate? Reach out via the [Contact](#) section on my website or connect with me on:
 
-- 📧 Email: your-email@example.com
+- 📧 Email: swathimuniyasamy03@gmail.com
 - 💼 LinkedIn: https://www.linkedin.com/in/swathi-m-8507032b9/
 - 🐙 GitHub: https://github.com/Swathimuniyasamy
 
